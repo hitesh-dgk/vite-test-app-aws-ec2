@@ -24,6 +24,8 @@ const metadata = {
     icons: ['https://avatars.githubusercontent.com/u/37784886']
 }
 
+
+console.log("inside wagmi config")
 export const wagmiConfig = createConfig({
     chains: [mainnet, sepolia, bellecour],
     transports: {

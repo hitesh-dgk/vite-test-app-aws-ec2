@@ -20,6 +20,8 @@ const queryClient = new QueryClient()
 globalThis.Buffer = Buffer
 
 
+console.log("inside app component")
+
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   // <React.StrictMode>
