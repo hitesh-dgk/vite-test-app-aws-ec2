@@ -1,3 +1,50 @@
 npm i --save @fontsource-variable/anybody @fontsource/mulish @fontsource/space-mono @iexec/dataprotector @reduxjs/toolkit @tanstack/react-query @uidotdev/usehooks @web3modal/wagmi axios bootstrap graphql react react-bootstrap react-bootstrap-icons react-dom react-google-recaptcha react-redux react-router-dom react-twc tailwindcss-animate viem wagmi
 
 npm i --D @types/node-sass @types/react @types/react-dom @typescript-eslint/eslint-plugin @typescript-eslint/parser @vitejs/plugin-react autoprefixer eslint eslint-plugin-react-hooks eslint-plugin-react-refresh @types/react-google-recaptcha node-sass postcss sass tailwindcss typescript vite
+
+
+
+
+// or 
+
+npm i --save @fontsource-variable/anybody
+npm i --save @fontsource/mulish
+npm i --save @fontsource/space-mono
+npm i --save @iexec/dataprotector
+npm i --save @reduxjs/toolkit
+npm i --save @tanstack/react-query
+npm i --save @uidotdev/usehooks
+npm i --save @web3modal/wagmi
+npm i --save axios
+npm i --save bootstrap
+npm i --save graphql
+npm i --save react
+npm i --save react-bootstrap
+npm i --save react-bootstrap-icons
+npm i --save react-dom
+npm i --save react-google-recaptcha
+npm i --save react-redux
+npm i --save react-router-dom
+npm i --save react-twc
+npm i --save tailwindcss-animate
+npm i --save viem
+npm i --save wagmi
+
+
+npm i --D @types/node-sass
+npm i --D @types/react
+npm i --D @types/react-dom
+npm i --D @typescript-eslint/eslint-plugin
+npm i --D @typescript-eslint/parser
+npm i --D @vitejs/plugin-react
+npm i --D autoprefixer
+npm i --D eslint
+npm i --D eslint-plugin-react-hooks
+npm i --D eslint-plugin-react-refresh
+npm i --D @types/react-google-recaptcha
+npm i --D node-sass
+npm i --D postcss
+npm i --D sass
+npm i --D tailwindcss
+npm i --D typescript
+npm i --D vite
