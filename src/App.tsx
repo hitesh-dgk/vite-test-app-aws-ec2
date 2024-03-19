@@ -11,7 +11,7 @@ function App() {
   console.log("fetchingProtectedData: ", fetchingProtectedData)
   console.log("protectedData: ", protectedData)
 
-  // useWatchWagmiAccount();
+  useWatchWagmiAccount();
 
 
   return (
