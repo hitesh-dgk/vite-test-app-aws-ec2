@@ -1,7 +1,7 @@
 import React, { Suspense }   from "react";
 // import { useAppSelector } from "./store/hooks";
 // import { RootState } from "./store";
-import { useWatchWagmiAccount } from "./utils/watchWagmiAccount";
+// import { useWatchWagmiAccount } from "./utils/watchWagmiAccount";
 // import './index.scss'
 // import './App.scss'
 // import PrivacyPassLayer from "./modules/PrivacyPassLayer"
@@ -14,7 +14,7 @@ import { useWatchWagmiAccount } from "./utils/watchWagmiAccount";
 function App() {
   // const { isConnected, isConnecting, isReconnecting, fetchingProtectedData, protectedData } = useAppSelector((state: RootState) => state.user);
 
-  useWatchWagmiAccount();
+  // useWatchWagmiAccount();
   return (
     <Suspense fallback={<></>}>
       Test App
