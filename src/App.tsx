@@ -1,10 +1,15 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import { useAccount } from "wagmi";
 import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+  const { isConnected } = useAccount()
+  useEffect(() => {
+    console.log("isConnected: ", isConnected)
+  }, [isConnected])
 
   return (
     <>
@@ -20,6 +25,7 @@ function App() {
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
+          User is connected: {isConnected}
         </button>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
