@@ -25,7 +25,7 @@ console.log("upto store importted")
 
 // const queryClient = new QueryClient()
 // console.log("queryClient: ", queryClient)
-global.Buffer = Buffer
+globalThis.Buffer = Buffer
 
 
 console.log("inside app component ")
