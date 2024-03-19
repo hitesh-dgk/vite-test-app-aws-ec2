@@ -9,7 +9,7 @@ import '@fontsource/mulish/latin-600.css'; // semibold
 import '@fontsource/mulish/latin-700.css'; // bold
 import '@fontsource-variable/anybody/wdth.css';
 import App from './App.tsx'
-import { BrowserRouter } from "react-router-dom"
+// import { BrowserRouter } from "react-router-dom"
 // import PrivacyPassLayer from './modules/PrivacyPassLayer/index.tsx'
 import { WagmiProvider } from 'wagmi'
 import { wagmiConfig } from './utils/wagmiConfig.ts';
@@ -27,11 +27,11 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   <WagmiProvider config={wagmiConfig}>
     <QueryClientProvider client={queryClient}>
       {/* <Provider store={store}> */}
-        <BrowserRouter>
+        {/* <BrowserRouter> */}
           {/* <PrivacyPassLayer> */}
             <App />
           {/* </PrivacyPassLayer> */}
-        </BrowserRouter>
+        {/* </BrowserRouter> */}
       {/* </Provider> */}
     </QueryClientProvider>
   </WagmiProvider>,
