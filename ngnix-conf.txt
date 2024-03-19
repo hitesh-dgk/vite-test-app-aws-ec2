@@ -3,6 +3,9 @@ nano /tmp/nodesource_setup.sh
 sudo bash /tmp/nodesource_setup.sh
 sudo apt install nodejs
 
+
+sudo apt update
+sudo apt install nginx
 sudo nano /etc/nginx/sites-available/pulse-dapp
 
 server {

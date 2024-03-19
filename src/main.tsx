@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 console.log("second line")
-// import { Buffer } from 'buffer'
+import { Buffer } from 'buffer'
 console.log("buffer importted")
 
-// import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 console.log("tanstack importted")
 import '@fontsource/mulish/latin-400.css'; // normal
 import '@fontsource/mulish/latin-500.css'; // medium
@@ -23,9 +23,9 @@ console.log("upto store importted")
 
 
 
-// const queryClient = new QueryClient()
+const queryClient = new QueryClient()
 // console.log("queryClient: ", queryClient)
-// globalThis.Buffer = Buffer
+globalThis.Buffer = Buffer
 
 
 console.log("inside app component ")
@@ -34,7 +34,7 @@ console.log("inside app component ")
 ReactDOM.createRoot(document.getElementById('root')!).render(
   // <React.StrictMode>
   <WagmiProvider config={wagmiConfig}>
-    {/* // <QueryClientProvider client={queryClient}> */}
+    <QueryClientProvider client={queryClient}>
       <Provider store={store}>
         <BrowserRouter>
           {/* <PrivacyPassLayer> */}
@@ -42,7 +42,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
           {/* </PrivacyPassLayer> */}
         </BrowserRouter>
       </Provider>
-    {/* // </QueryClientProvider> */}
+    </QueryClientProvider>
   </WagmiProvider>,
   // </React.StrictMode>,
 )
