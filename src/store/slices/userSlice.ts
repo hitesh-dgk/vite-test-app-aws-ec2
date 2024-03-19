@@ -35,24 +35,31 @@ export const userSlice = createSlice({
     initialState,
     reducers: {
         setConnector: (state, action: PayloadAction<any>) => {
+            console.log("dispatched setConnector")
             state.connector = action.payload.connector
         },
         setIsConnected: (state, action: PayloadAction<any>) => {
+            console.log("dispatched setIsConnected")
             state.isConnected = action.payload.isConnected
         },
         setIsConnecting: (state, action: PayloadAction<any>) => {
+            console.log("dispatched setIsConnecting")
             state.isConnecting = action.payload.isConnecting
         },
         setIsReconnecting: (state, action: PayloadAction<any>) => {
+            console.log("dispatched setIsReconnecting")
             state.isReconnecting = action.payload.isReconnecting
         },
         setAddress: (state, action: PayloadAction<any>) => {
+            console.log("dispatched setAddress")
             state.address = action.payload.address
         },
         setChainId: (state, action: PayloadAction<any>) => {
+            console.log("dispatched setChainId")
             state.chainId = action.payload.chainId
         },
         setProtectedData : (state, action: PayloadAction<any>) => {
+            console.log("dispatched setProtectedData ")
             state.fetchingProtectedData = false
             state.protectedData = action.payload.protectedData
         },

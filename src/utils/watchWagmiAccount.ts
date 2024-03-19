@@ -10,8 +10,8 @@ import { getExistingProtectedEmails } from '../externals/getExistingProtectedEma
 
 export function useWatchWagmiAccount() {
   const { connector, isConnected, address, chain, chainId, isConnecting, isReconnecting, isDisconnected } = useAccount();
-  // console.log("connector, isConnected, address, chain, chainId, isConnecting, isReconnecting, isDisconnected ")
-  // console.log(connector, isConnected, address, chain, chainId, isConnecting, isReconnecting, isDisconnected )
+  console.log("useWatchWagmiAccount connector, isConnected, address, chain, chainId, isConnecting, isReconnecting, isDisconnected ")
+  console.log(connector, isConnected, address, chain, chainId, isConnecting, isReconnecting, isDisconnected )
   const dispatch = useAppDispatch()
   useEffect(() => {
     // Update userStore
