@@ -1,0 +1,13 @@
+.update-model {
+    color: #000;
+
+    .submit-button {
+        position: relative;
+        .progress {
+            position: absolute;
+            height: 6px;
+            width: 100%;
+            left: 0;
+        }
+    }
+}

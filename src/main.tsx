@@ -13,8 +13,8 @@ import { BrowserRouter } from "react-router-dom"
 // import PrivacyPassLayer from './modules/PrivacyPassLayer/index.tsx'
 import { WagmiProvider } from 'wagmi'
 import { wagmiConfig } from './utils/wagmiConfig.ts';
-// import { Provider } from 'react-redux';
-// import { store } from './store';
+import { Provider } from 'react-redux';
+import { store } from './store';
 
 
 const queryClient = new QueryClient()
@@ -26,13 +26,13 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   // <React.StrictMode>
   <WagmiProvider config={wagmiConfig}>
     <QueryClientProvider client={queryClient}>
-      {/* <Provider store={store}> */}
+      <Provider store={store}>
         <BrowserRouter>
           {/* <PrivacyPassLayer> */}
             <App />
           {/* </PrivacyPassLayer> */}
         </BrowserRouter>
-      {/* </Provider> */}
+      </Provider>
     </QueryClientProvider>
   </WagmiProvider>,
   // </React.StrictMode>,

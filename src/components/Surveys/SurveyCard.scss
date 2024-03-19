@@ -1,0 +1,28 @@
+
+.survey-card {
+    // margin: 0 15px;
+    width: 300px;
+    height: 340px !important;
+    margin: 15px 0;
+    img {
+        width: 300px;
+        height: 200px;
+    }
+    .survey-card-body {
+        // width: 300px;
+    }
+    .survey-title {
+        // width: 300px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    .survey-content {
+        // width: 300px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+}

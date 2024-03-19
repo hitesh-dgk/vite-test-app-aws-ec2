@@ -1,31 +1,25 @@
-import React, { Suspense } from "react";
-import { Routes, Route, Outlet } from "react-router-dom"
+import React, { Suspense }   from "react";
+import { useAppSelector } from "./store/hooks";
+import { RootState } from "./store";
+import { useWatchWagmiAccount } from "./utils/watchWagmiAccount";
+// import './index.scss'
+// import './App.scss'
+// import PrivacyPassLayer from "./modules/PrivacyPassLayer"
+// import MainApplicationHOC from "./components/MainApplicationHOC";
+const PrivacyPassLayer = React.lazy(() => import('./modules/PrivacyPassLayer'));
+const MainApplicationHOC = React.lazy(() => import("./components/MainApplicationHOC"));
 
-const TestApp = () => {
-  return (
-    <>
-      Main Test App
-    </>
-  );
-}
 
-const MainApp = () => {
-  return (
-    <>
-      Main App
-    </>
-  );
-}
 
 function App() {
+  const { isConnected, isConnecting, isReconnecting, fetchingProtectedData, protectedData } = useAppSelector((state: RootState) => state.user);
+
+  useWatchWagmiAccount();
   return (
-    <>
-      <Routes>
-          <Route path="/" element={<MainApp />} />
-          <Route path="/test" element={<TestApp />} />
-      </Routes>
-      <Outlet />
-    </>
+    <Suspense fallback={<></>}>
+      {!isConnecting && !isReconnecting && !fetchingProtectedData && (!isConnected || protectedData.length == 0) && <PrivacyPassLayer/>}
+      {!isConnecting && !isReconnecting && !fetchingProtectedData &&  (isConnected && protectedData.length > 0) && <MainApplicationHOC/>}
+      </Suspense>
   )
 }
 

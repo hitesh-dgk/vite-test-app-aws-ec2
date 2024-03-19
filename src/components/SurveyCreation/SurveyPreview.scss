@@ -1,0 +1,22 @@
+
+.survey-preview {
+    // height: 100%;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.question-preview-block {
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    .answer-block {
+        background: #8080805c;
+        border-radius: 7px;
+        padding: 10px;
+    }
+}
