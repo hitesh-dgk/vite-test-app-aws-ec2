@@ -1,0 +1,48 @@
+.fw-bold {
+  color: antiquewhite;
+  font-size: xx-large;
+}
+
+.appnavbar {
+  padding: 25px 0 !important;
+}
+
+.profile-icon__image {
+  height: 50px;
+  width: 50px;
+  color: rgb(250, 245, 245);
+}
+
+.logout-button {
+
+  background: transparent !important;
+  border: none !important;
+  border-radius: 50% !important;
+  line-height: 1px;
+  height: 50px;
+  width: 50px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    border: 1px solid #fff !important;
+  }
+}
+
+.profile-button {
+
+  background: transparent !important;
+  border: none !important;
+  border-radius: 50% !important;
+  line-height: 1px;
+  height: 50px;
+  width: 50px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    border: 1px solid #fff !important;
+  }
+}

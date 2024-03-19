@@ -1,0 +1,35 @@
+.app-navbar {
+    background: transparent !important;
+    color: #fff;
+    padding: 20px 0 !important;
+    border-bottom: 1px solid #ce2c68;
+    a {
+        padding: 10px 20px;
+        color: #fff;
+        &:hover {
+            color: #fff !important;
+        }
+        &.active {
+            color: red !important;
+        }
+        &.navbar-brand {
+            &.active {
+                color: #fff !important;
+            }
+        }
+        &.app-link {
+            border: 1px solid #fff;
+            margin-right: 10px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .nav-link-block {
+        a {
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+        }
+    }
+}
