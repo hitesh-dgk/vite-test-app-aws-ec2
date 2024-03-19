@@ -34,7 +34,7 @@ console.log("inside app component ")
 ReactDOM.createRoot(document.getElementById('root')!).render(
   // <React.StrictMode>
   <WagmiProvider config={wagmiConfig}>
-    <QueryClientProvider client={queryClient}>
+    {/* <QueryClientProvider client={queryClient}> */}
       <Provider store={store}>
         <BrowserRouter>
           {/* <PrivacyPassLayer> */}
@@ -42,7 +42,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
           {/* </PrivacyPassLayer> */}
         </BrowserRouter>
       </Provider>
-    </QueryClientProvider>
+    {/* </QueryClientProvider> */}
   </WagmiProvider>,
   // </React.StrictMode>,
 )
