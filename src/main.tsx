@@ -20,7 +20,7 @@ import { store } from './store';
 // globalThis.Buffer = Buffer
 
 
-console.log("inside app component")
+console.log("inside app component ")
 
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
