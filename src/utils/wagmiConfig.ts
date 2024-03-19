@@ -4,6 +4,7 @@ import { mainnet, sepolia } from 'wagmi/chains'
 import { walletConnect, injected, coinbaseWallet } from 'wagmi/connectors'
 import { bellecour } from './walletConnection.ts';
 
+console.log("+++++ wagmiConfig")
 
 // Wagmi Client initialization
 if (!import.meta.env.VITE_APP_WALLET_CONNECT_PROJECT_ID) {
@@ -15,6 +16,7 @@ if (!import.meta.env.VITE_APP_WALLET_CONNECT_PROJECT_ID) {
 
 // 1. Get projectId at https://cloud.walletconnect.com
 const projectId = import.meta.env.VITE_APP_WALLET_CONNECT_PROJECT_ID
+console.log("projectId: ", projectId)
 
 // 2. Create wagmiConfig
 const metadata = {
