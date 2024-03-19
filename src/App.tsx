@@ -17,8 +17,9 @@ function App() {
   useWatchWagmiAccount();
   return (
     <Suspense fallback={<></>}>
-      {!isConnecting && !isReconnecting && !fetchingProtectedData && (!isConnected || protectedData.length == 0) && <PrivacyPassLayer/>}
-      {!isConnecting && !isReconnecting && !fetchingProtectedData &&  (isConnected && protectedData.length > 0) && <MainApplicationHOC/>}
+      Test App
+      {/* {!isConnecting && !isReconnecting && !fetchingProtectedData && (!isConnected || protectedData.length == 0) && <PrivacyPassLayer/>} */}
+      {/* {!isConnecting && !isReconnecting && !fetchingProtectedData &&  (isConnected && protectedData.length > 0) && <MainApplicationHOC/>} */}
       </Suspense>
   )
 }
