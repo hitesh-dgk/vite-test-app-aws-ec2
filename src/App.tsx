@@ -1,5 +1,5 @@
 import React, { Suspense } from "react";
-import { Routes, Route } from "react-router-dom"
+import { Routes, Route, Outlet } from "react-router-dom"
 
 const TestApp = () => {
   return (
@@ -24,6 +24,7 @@ function App() {
           <Route path="/" element={<MainApp />} />
           <Route path="/test" element={<TestApp />} />
       </Routes>
+      <Outlet />
     </>
   )
 }
