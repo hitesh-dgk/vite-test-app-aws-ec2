@@ -1,0 +1,3 @@
+npm i --save @fontsource-variable/anybody @fontsource/mulish @fontsource/space-mono @iexec/dataprotector @reduxjs/toolkit @tanstack/react-query @uidotdev/usehooks @web3modal/wagmi axios bootstrap graphql react react-bootstrap react-bootstrap-icons react-dom react-google-recaptcha react-redux react-router-dom react-twc tailwindcss-animate viem wagmi
+
+npm i --D @types/node-sass @types/react @types/react-dom @typescript-eslint/eslint-plugin @typescript-eslint/parser @vitejs/plugin-react autoprefixer eslint eslint-plugin-react-hooks eslint-plugin-react-refresh @types/react-google-recaptcha node-sass postcss sass tailwindcss typescript vite
