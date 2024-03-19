@@ -1,5 +1,5 @@
 import { type Connector } from 'wagmi';
-import { IExecDataProtector } from '../../node_modules/@iexec/dataprotector';
+import { IExecDataProtector } from '@iexec/dataprotector';
 // import { useUserStore } from '../stores/user.store.ts';
 
 let iExecDataProtector: IExecDataProtector | null = null;
