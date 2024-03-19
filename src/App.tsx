@@ -1,7 +1,7 @@
 import React, { Suspense }   from "react";
 import { useAppSelector } from "./store/hooks";
 import { RootState } from "./store";
-// import { useWatchWagmiAccount } from "./utils/watchWagmiAccount";
+import { useWatchWagmiAccount } from "./utils/watchWagmiAccount";
 
 function App() {
   const { isConnected, isConnecting, isReconnecting, fetchingProtectedData, protectedData } = useAppSelector((state: RootState) => state.user);
