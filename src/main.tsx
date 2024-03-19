@@ -23,7 +23,7 @@ console.log("upto store importted")
 
 
 
-const queryClient = new QueryClient()
+// const queryClient = new QueryClient()
 // console.log("queryClient: ", queryClient)
 globalThis.Buffer = Buffer
 
