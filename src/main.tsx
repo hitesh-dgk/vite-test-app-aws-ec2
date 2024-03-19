@@ -15,8 +15,8 @@ console.log("all the fonts importted")
 
 import App from './App.tsx'
 import { BrowserRouter } from "react-router-dom"
-import { WagmiProvider } from 'wagmi'
-import { wagmiConfig } from './utils/wagmiConfig.ts';
+// import { WagmiProvider } from 'wagmi'
+// import { wagmiConfig } from './utils/wagmiConfig.ts';
 import { Provider } from 'react-redux';
 import { store } from './store';
 console.log("upto store importted")
