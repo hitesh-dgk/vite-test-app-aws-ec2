@@ -10,11 +10,6 @@ import '@fontsource/mulish/latin-700.css'; // bold
 import '@fontsource-variable/anybody/wdth.css';
 import App from './App.tsx'
 import { BrowserRouter } from "react-router-dom"
-// import PrivacyPassLayer from './modules/PrivacyPassLayer/index.tsx'
-import { WagmiProvider } from 'wagmi'
-import { wagmiConfig } from './utils/wagmiConfig.ts';
-import { Provider } from 'react-redux';
-import { store } from './store';
 
 
 const queryClient = new QueryClient()
@@ -24,16 +19,10 @@ globalThis.Buffer = Buffer
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   // <React.StrictMode>
-  <WagmiProvider config={wagmiConfig}>
-    <QueryClientProvider client={queryClient}>
-      <Provider store={store}>
         <BrowserRouter>
           {/* <PrivacyPassLayer> */}
             <App />
           {/* </PrivacyPassLayer> */}
         </BrowserRouter>
-      </Provider>
-    </QueryClientProvider>
-  </WagmiProvider>,
   // </React.StrictMode>,
 )
